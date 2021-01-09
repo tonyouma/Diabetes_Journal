@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+$primary-blue: #437FD7;
+$dark-blue: #2F6F97;
+
+// Font Colors
+
+$font-color-primary: #2E282A;
+$font-color-heading: #4F4F4F;
+$font-color-white: #FFFFFF;
+$font-color-gray: #828282;
+
+// Font Weight Variations
+
+@mixin font-weight($weight) {
+    $weights: (
+        normal: 400,
+        medium-one: 500,
+        medium-two: 600,
+        bold: 700
+    );
+
+    $output: $weight;
+    @if map-has-key($weights , $weight) {
+        $output: map-get($weights, $weight );
+    }
+
+    font-weight: $output;
+}
+
+// used by @include font-weight(normal)
+
+// Fonts
+
+// Defaults values
+
+$default-line-height: 20.81px !default;
+$default-font-family:  !default;
+
+// Function to convert pixels to rems
+
+@function px-to-rem($size) {
+    @return ($size / 10)+rem;
+}
+
+// Mixin
+
+@mixin font-size($fs: false, $lh: $default-line-height, $ff: $default-font-family) {
+    @if $fs {
+        font-size: $fs + px;
+        font-size: px-to-rem($fs);
+    }
+
+    @if $lh {
+        line-height: $lh;
+    }
+
+}
+
+// Usage
+
+// @include font-size($fs: 14px, $ff: , $lh: 1.5);
+
+
+
+// Responsive Design
+@mixin media-sm {
+    @media screen and (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin media-md {
+    @media screen and (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin media-lg {
+    @media screen and (min-width: 1024px) {
+        @content;
+    }
+}
+
+@mixin media-xl {
+    @media screen and (min-width: 1600px) {
+        @content;
+    }
+}
