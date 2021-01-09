@@ -39,7 +39,7 @@ $font-color-gray: #828282;
 // Defaults values
 
 $default-line-height: 20.81px !default;
-$default-font-family:  !default;
+// $default-font-family:  !default;
 
 // Function to convert pixels to rems
 
@@ -48,15 +48,15 @@ $default-font-family:  !default;
 }
 
 // Mixin
+// @mixin font-size($fs: false, $lh: $default-line-height, $ff: $default-font-family) {
 
-@mixin font-size($fs: false, $lh: $default-line-height, $ff: $default-font-family) {
+@mixin font-size($fs: false, $lh: $default-line-height) {
     @if $fs {
         font-size: $fs + px;
-        font-size: px-to-rem($fs);
     }
 
     @if $lh {
-        line-height: $lh;
+        line-height: $lh + px;
     }
 
 }
@@ -91,3 +91,4 @@ $default-font-family:  !default;
         @content;
     }
 }
+
