@@ -6,10 +6,12 @@
 
 $primary-blue: #437FD7;
 $dark-blue: #2F6F97;
+$primary-white: #FFFFFF;
 
 // Font Colors
 
 $font-color-primary: #2E282A;
+$font-color-dark: #333333;
 $font-color-heading: #4F4F4F;
 $font-color-white: #FFFFFF;
 $font-color-gray: #828282;
@@ -38,8 +40,9 @@ $font-color-gray: #828282;
 
 // Defaults values
 
-$default-line-height: 20.81px !default;
-$default-font-family:  !default;
+$default-line-height: 20.81 !default;
+$default-font-size: 13 !default;
+// $default-font-family:  !default;
 
 // Function to convert pixels to rems
 
@@ -48,11 +51,11 @@ $default-font-family:  !default;
 }
 
 // Mixin
+// @mixin font-size($fs: false, $lh: $default-line-height, $ff: $default-font-family) {
 
-@mixin font-size($fs: false, $lh: $default-line-height, $ff: $default-font-family) {
+@mixin font-size($fs: $default-font-size, $lh: $default-line-height) {
     @if $fs {
         font-size: $fs + px;
-        font-size: px-to-rem($fs);
     }
 
     @if $lh {
@@ -91,3 +94,4 @@ $default-font-family:  !default;
         @content;
     }
 }
+

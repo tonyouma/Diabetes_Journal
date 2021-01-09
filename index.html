@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/dist/css/styles.css" />
+    <link rel="stylesheet" href="./assets/dist/vendors/foundation.min.css" />
+
+    <title>Diabetes_Journal</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="row expanded">
+        <div class="small-12">
+          <div class="header-logo">
+            <a href="#!" rel="home">
+              <img src="assets/imgs/THE DBJ.svg" alt="" />
+            </a>
+          </div>
+
+          <a aria-label="mobile menu" class="nav-toggle">
+            <span></span>
+            <span></span>
+          </a>
+          <nav>
+            <ul class="top-main-nav">
+              <li class="">
+                <a href="#!" aria-current="page">Home</a>
+              </li>
+              <li class="">
+                <a href="#!">Contact Us</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- Hero Section -->
+      <section class="hero_section">
+        <div class="row expanded wrapper">
+          <div class="medium-6 small-12 left_content">
+            <span>Your friendly Diabetes Journal</span>
+            <h1>
+              Track, Record and Share your diabetes updates with your doctor
+            </h1>
+            <p>
+              Of the people who died in Moderna’s vaccine group, two were over
+              the age of 75 and had preexisting cardiac disease.
+            </p>
+            <p>Download The Diabetes Journal and enjoy endless features;</p>
+            <div class="row">
+              <div class="columns medium-6 small-6">Track Your Blood Sugar</div>
+              <div class="medium-6 small-6">Record Your Blood Pressure</div>
+            </div>
+            <div class="row">
+              <div class="columns medium-6 small-6">Daily Insulin Tracking</div>
+              <div class="medium-6 small-6">Share Records With Your Doctor</div>
+            </div>
+
+            <!-- <button>
+
+            </button> -->
+          </div>
+          <div class="medium-6 small-12">
+            <img src="assets/imgs/Family Values Healthy Family.png" alt="" />
+          </div>
+        </div>
+      </section>
+      <!-- End Hero Section -->
+
+      <!-- Track Section -->
+      <section>
+        <div class="row expanded wrapper ">
+          <div class="medium-6 small-12">
+            <img src="assets/imgs/Shiny Happy Sitting.png" alt="" />
+          </div>
+          <div class="medium-6 small-12">
+            <h2>
+              We've learned a lot about designing banking, trading, and other
+              financial apps.
+            </h2>
+            <p>
+              Being able to purchase utilities from your mobile phone anywhere
+              and at any time of the day or night means you’ll always be able to
+              keep the lights and water on.
+            </p>
+            <ul class="list_styles">
+              <li>Being able to purchase</li>
+              <li>It also means that your tokens online for you</li>
+              <li>Purchase utilities from your mobile phone</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- End Track Section -->
+      <!-- Join Section -->
+      <section class="join_section">
+        <div class="row expanded wrapper align-center">
+          <div class="medium-7 small-12">
+            <p>Join Our Waiting List</p>
+            <p class="join_info_text">
+              We are building your friendly Diabetes Journal.
+            </p>
+
+            <button class="join_button">
+              Join Waitlist
+            </button>
+          </div>
+          <div class="medium-5 small-12">
+            <img src="assets/imgs/Allura Staying Home.png" alt="" />
+          </div>
+        </div>
+      </section>
+      <!-- End Join Section -->
+    </main>
+
+    <!-- Footer -->
+
+    <footer class="wrapper">
+      <div class="row expanded">
+        <div class="medium-6 small-12">
+          <img src="assets/imgs/THE DBJ.svg" alt="Logo Icon" />
+          <p class="footer_intro">Your friendly Diabetes Journal</p>
+        </div>
+        <div class=" medium-6 small-12 contact_info">
+          <h6>Contact Us</h6>
+          <ul>
+            <li>4th Floor, The Pavilion</li>
+            <li>Lower Kabete Rd, Nairobi</li>
+          </ul>
+          <ul>
+            <li>(+254) 0716 909 815</li>
+            <li><a href="mailto:"> info@thedbj.com</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row expanded">
+        <p>
+          &copy; the DBJ
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+          . All Rights Reserved
+        </p>
+      </div>
+    </footer>
+    <!-- End Footer -->
+  </body>
+
+  <script src="./assets/js/jquery.min.js"></script>
+  <script src="./assets/js/foundation.min.js"></script>
+
+  <!--  Power up foundation-->
+  <script>
+    $(document).foundation();
+  </script>
+
+  <script>
+    // TOGGLE HAMBURGER & COLLAPSE NAV
+    $(".nav-toggle").on("click", function() {
+      $(this).toggleClass("open");
+      $(".top-main-nav").toggleClass("collapse");
+    });
+    // REMOVE X & COLLAPSE NAV ON ON CLICK
+    $(".menu-left a").on("click", function() {
+      $(".nav-toggle").removeClass("open");
+      $(".top-main-nav").removeClass("collapse");
+    });
+  </script>
+</html>

@@ -1,0 +1,75 @@
+body {
+    @include font-size;
+    @include font-weight (normal);
+}
+
+
+
+h2 {
+    line-height: 46.93px !important;
+}
+
+.wrapper {
+    padding: 100px 190px 100px 190px;
+}
+
+.hero {
+    &_section  {
+        .left_content {
+        width: 520px;
+        }
+        h1 {
+            @include font-size ($fs: 45, $lh: 131.1%);
+            padding-bottom: 20px;
+            padding-top: 20px;
+            // width: 90%;
+        }
+
+        .input-group {
+            // width: 520px;
+            // height: 60px;
+            // box-shadow: none;
+        }
+    }
+}
+
+.list_styles {
+    list-style-image: url('../../imgs/Vector.png');
+}
+
+.join {
+    &_section{
+    background-color: $primary-blue;
+    color: $font-color-white;
+    }
+
+    &_button {
+        border-radius: 5px;
+        background: $primary-white;
+        padding: 17px 38px;
+        color: $primary-blue;
+    }
+
+    &_info_text {
+        @include font-size ($fs: 45, $lh: 60.34px);
+        padding-bottom: 20px;
+        padding-top: 10px;
+    }
+}
+
+footer {
+    .footer_intro {
+        @include font-size ( $fs: 45, $lh: 60.34px);
+        padding-top: 40px;
+        padding-bottom: 50px;
+        width: 70%;
+    }
+
+    .contact_info {
+        padding-left: 25%;
+        ul {
+        list-style-type: none;
+        margin-left: 0;
+        }
+    }
+}
