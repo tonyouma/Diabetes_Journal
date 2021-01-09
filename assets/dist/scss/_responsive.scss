@@ -1,0 +1,42 @@
+@include media-sm {
+    .wrapper {
+        padding: 30px;
+    }
+
+    footer {
+        .footer_intro {
+            @include font-size ($fs: 38, $lh: 45.34px);
+            padding-top: 30px;
+            padding-bottom: 20px;
+            width: 100%;
+        }
+    }
+
+    .hero {
+        &_section {
+
+            h1 {
+                @include font-size ($fs: 32, $lh: 107.1%);
+                padding-bottom: 20px;
+                padding-top: 20px;
+                // width: 90%;
+            }
+
+            .input-group {
+                // width: 520px;
+                // height: 60px;
+                // box-shadow: none;
+            }
+        }
+    }
+    h2 {
+        line-height: 28.93px !important;
+    }
+
+    .join {
+        &_info_text {
+            @include font-size ($fs: 31, $lh: 38.34px);
+            padding-bottom: 10px;
+        }
+    }
+}
