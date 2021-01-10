@@ -140,11 +140,14 @@ footer .contact_info ul {
     padding: 30px;
   }
   footer .footer_intro {
-    font-size: 38px;
-    line-height: 45.34px;
+    font-size: 30px;
+    line-height: 35.34px;
     padding-top: 30px;
     padding-bottom: 20px;
     width: 100%;
+  }
+  footer .contact_info {
+    padding-left: 0;
   }
   .hero_section h1 {
     font-size: 32px;
@@ -155,8 +158,20 @@ footer .contact_info ul {
   .hero_section input[type="text"] {
     width: 10%;
   }
+  .hero_section input::-webkit-input-placeholder {
+    padding-left: 5px;
+  }
+  .hero_section input:-ms-input-placeholder {
+    padding-left: 5px;
+  }
+  .hero_section input::-ms-input-placeholder {
+    padding-left: 5px;
+  }
+  .hero_section input::placeholder {
+    padding-left: 5px;
+  }
   .hero_section form {
-    width: 370px;
+    width: 100%;
   }
   h2 {
     line-height: 28.93px !important;
@@ -165,6 +180,12 @@ footer .contact_info ul {
     font-size: 31px;
     line-height: 38.34px;
     padding-bottom: 10px;
+  }
+  .track_section .row.expanded {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
 }
 
