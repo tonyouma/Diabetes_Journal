@@ -18,6 +18,10 @@ h2 {
     &_section  {
         .left_content {
         width: 520px;
+
+        p{
+            width: 86%;
+        }
         }
         h1 {
             @include font-size ($fs: 45, $lh: 134.13%);
@@ -142,6 +146,10 @@ h2 {
              vertical-align: middle;
          }
      }
+
+      p {
+          width: 80%;
+      }
 }
 
 footer {

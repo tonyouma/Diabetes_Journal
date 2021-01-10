@@ -52,6 +52,10 @@ h2 {
   width: 520px;
 }
 
+.hero_section .left_content p {
+  width: 86%;
+}
+
 .hero_section h1 {
   font-size: 45px;
   line-height: 134.13%;
@@ -198,6 +202,10 @@ h2 {
   vertical-align: middle;
 }
 
+.track_section p {
+  width: 80%;
+}
+
 footer .footer_intro {
   font-size: 45px;
   line-height: 60.34px;
@@ -229,6 +237,12 @@ footer .contact_info ul {
   }
   footer .contact_info {
     padding-left: 0;
+  }
+  .hero_section .left_content {
+    width: 520px;
+  }
+  .hero_section .left_content p {
+    width: 100%;
   }
   .hero_section h1 {
     font-size: 32px;
@@ -276,6 +290,9 @@ footer .contact_info ul {
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
+  }
+  .track_section p {
+    width: 100%;
   }
 }
 

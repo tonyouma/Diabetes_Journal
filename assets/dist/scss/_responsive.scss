@@ -18,6 +18,13 @@
 
     .hero {
         &_section {
+                 .left_content {
+                     width: 520px;
+
+                     p {
+                         width: 100%;
+                     }
+                 }
 
             h1 {
                 @include font-size ($fs: 32, $lh: 107.1%);
@@ -67,6 +74,10 @@
     .track_section {
         .row.expanded {
             flex-direction: column-reverse;
+        }
+
+        p {
+            width: 100%;
         }
     }
 }
