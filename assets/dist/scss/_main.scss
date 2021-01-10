@@ -137,15 +137,30 @@ h2 {
 
      ul {
          margin-left: 0;
-         margin-bottom: 42.88px;
-         li {
+         margin-bottom: 38.88px;
+         .list_styles {
+             li {
              background: url('../../imgs/Vector.png') no-repeat left center;
              padding: 5px 0px 6px 30px;
              list-style: none;
              margin: 0;
              vertical-align: middle;
+             }
          }
      }
+
+         .orbit-bullets {
+             text-align: left;
+             margin-top: 0;
+             button {
+                 width: 6px;
+                 height: 6px;
+             }
+             button.is-active{
+                 background-color: $primary-blue;
+             }
+         }
+
 
       p {
           width: 80%;
