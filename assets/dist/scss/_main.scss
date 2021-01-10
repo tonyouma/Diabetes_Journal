@@ -137,15 +137,34 @@ h2 {
 
      ul {
          margin-left: 0;
-         margin-bottom: 42.88px;
-         li {
+         margin-bottom: 38.88px;
+         .list_styles {
+             li {
              background: url('../../imgs/Vector.png') no-repeat left center;
              padding: 5px 0px 6px 30px;
              list-style: none;
              margin: 0;
              vertical-align: middle;
+             }
          }
      }
+
+     .orbit-container {
+         height: 100%;
+     }
+
+         .orbit-bullets {
+             text-align: left;
+             margin-top: 0;
+             button {
+                 width: 6px;
+                 height: 6px;
+             }
+             button.is-active{
+                 background-color: $primary-blue;
+             }
+         }
+
 
       p {
           width: 80%;
@@ -163,9 +182,22 @@ footer {
 
     .contact_info {
         padding-left: 25%;
+
+        h6{
+            @include font-weight(medium-two);
+        }
         ul {
         list-style-type: none;
         margin-left: 0;
+        padding-top: 20px;
+
+        li {
+            padding-top: 6px;
+
+            a{
+                color: $font-color-primary;
+            }
+        }
         }
     }
 }
