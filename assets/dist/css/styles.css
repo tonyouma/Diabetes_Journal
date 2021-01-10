@@ -30,6 +30,22 @@ h2 {
   padding-top: 20px;
 }
 
+.hero_section_buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 160px;
+  padding-top: 10px;
+}
+
+.hero_section_buttons:first-child {
+  margin-right: 10px;
+}
+
+.hero_section_buttons .pad_right {
+  padding-right: 10px;
+}
+
 .hero_section form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -44,7 +60,7 @@ h2 {
   height: 60px;
   border-radius: 5px;
   margin-top: 44px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .hero_section input {
@@ -95,8 +111,12 @@ h2 {
   cursor: pointer;
 }
 
-.list_styles {
-  list-style-image: url("../../imgs/Vector.png");
+.hero_section .journal_features img {
+  padding-right: 16px;
+}
+
+.hero_section .journal_features .row:first-child {
+  padding-bottom: 25px;
 }
 
 .join_section {
@@ -116,6 +136,31 @@ h2 {
   line-height: 60.34px;
   padding-bottom: 20px;
   padding-top: 10px;
+}
+
+.track_section span {
+  font-weight: 600;
+}
+
+.track_section span img {
+  padding-right: 15px;
+}
+
+.track_section h2 {
+  padding-top: 20px;
+}
+
+.track_section ul {
+  margin-left: 0;
+  margin-bottom: 42.88px;
+}
+
+.track_section ul li {
+  background: url("../../imgs/Vector.png") no-repeat left center;
+  padding: 5px 0px 6px 30px;
+  list-style: none;
+  margin: 0;
+  vertical-align: middle;
 }
 
 footer .footer_intro {
@@ -172,6 +217,15 @@ footer .contact_info ul {
   }
   .hero_section form {
     width: 100%;
+  }
+  .hero_section .journal_features .row:first-child {
+    padding-bottom: 0px;
+  }
+  .hero_section .journal_features .column {
+    padding-bottom: 10px;
+  }
+  .hero_section_buttons {
+    padding-bottom: 30px;
   }
   h2 {
     line-height: 28.93px !important;

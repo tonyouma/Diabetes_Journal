@@ -25,6 +25,21 @@ h2 {
             // width: 90%;
         }
 
+        &_buttons {
+            display: flex;
+            width: 160px;
+            padding-top: 10px;
+
+            &:first-child {
+                margin-right: 10px;
+            }
+
+            .pad_right {
+                padding-right: 10px;
+            }
+        }
+
+
         form {
             display: flex;
             flex-direction: row;
@@ -34,7 +49,7 @@ h2 {
             height: 60px;
             border-radius: 5px;
             margin-top: 44px;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
         }
 
         input {
@@ -65,14 +80,23 @@ h2 {
             border-radius: 5px;
             cursor: pointer;
         }
+
+        .journal_features {
+            img {
+                padding-right: 16px;
+            }
+            .row:first-child{
+                padding-bottom: 25px;
+            }
+        }
     }
 }
 
 
 
-.list_styles {
-    list-style-image: url('../../imgs/Vector.png');
-}
+// .list_styles {
+//     list-style-image: url('../../imgs/Vector.png');
+// }
 
 .join {
     &_section{
@@ -92,6 +116,32 @@ h2 {
         padding-bottom: 20px;
         padding-top: 10px;
     }
+}
+
+.track_section {
+    span {
+        @include font-weight (medium-two);
+        img {
+            padding-right: 15px;
+        }
+
+       
+    }
+     h2 {
+         padding-top: 20px;
+     }
+
+     ul {
+         margin-left: 0;
+         margin-bottom: 42.88px;
+         li {
+             background: url('../../imgs/Vector.png') no-repeat left center;
+             padding: 5px 0px 6px 30px;
+             list-style: none;
+             margin: 0;
+             vertical-align: middle;
+         }
+     }
 }
 
 footer {

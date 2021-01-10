@@ -36,6 +36,21 @@
              form {
                  width: 100%;
              }
+
+                 .journal_features {
+                     
+
+                     .row:first-child {
+                         padding-bottom: 0px;
+                     }
+                     .column {
+                         padding-bottom: 10px;
+                     }
+                 }
+
+                  &_buttons {
+                      padding-bottom: 30px;
+                  }
         }
     }
     h2 {
