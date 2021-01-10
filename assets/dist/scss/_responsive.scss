@@ -19,14 +19,15 @@
                 @include font-size ($fs: 32, $lh: 107.1%);
                 padding-bottom: 20px;
                 padding-top: 20px;
-                // width: 90%;
             }
 
-            .input-group {
-                // width: 520px;
-                // height: 60px;
-                // box-shadow: none;
-            }
+             input[type="text"] {
+               width: 10%;
+             }
+
+             form {
+                 width: 370px;
+             }
         }
     }
     h2 {

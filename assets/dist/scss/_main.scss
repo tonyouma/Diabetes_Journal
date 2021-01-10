@@ -25,13 +25,51 @@ h2 {
             // width: 90%;
         }
 
-        .input-group {
-            // width: 520px;
-            // height: 60px;
-            // box-shadow: none;
+        form {
+            display: flex;
+            flex-direction: row;
+            border: 1px solid #C4C4C4;
+            padding: 5px;
+            width: 520px;
+            height: 60px;
+            border-radius: 5px;
+            margin-top: 44px;
+            margin-bottom: 30px;
+        }
+
+        input {
+            flex-grow: 2;
+            border: none;
+        }
+
+        input:focus {
+            outline: none !important;
+        }
+        input::placeholder {
+            color: $font-color-gray;
+            padding-left: 20px;
+            // line-height: 17.43px;
+        }
+        input[type="text"] {
+            box-shadow: none;
+            border: none;
+            margin-bottom: 0;
+            height: auto;
+        }
+        
+
+        button {
+            background: $primary-blue;
+            color: $font-color-white;
+            padding-left: 54px;
+            padding-right: 54px;
+            border-radius: 5px;
+            cursor: pointer;
         }
     }
 }
+
+
 
 .list_styles {
     list-style-image: url('../../imgs/Vector.png');
