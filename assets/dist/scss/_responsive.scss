@@ -18,6 +18,13 @@
 
     .hero {
         &_section {
+                 .left_content {
+                     width: 520px;
+
+                     p {
+                         width: 100%;
+                     }
+                 }
 
             h1 {
                 @include font-size ($fs: 32, $lh: 107.1%);
@@ -36,10 +43,25 @@
              form {
                  width: 100%;
              }
+
+                 .journal_features {
+                     
+
+                     .row:first-child {
+                         padding-bottom: 0px;
+                     }
+                     .column {
+                         padding-bottom: 10px;
+                     }
+                 }
+
+                  &_buttons {
+                      padding-bottom: 30px;
+                  }
         }
     }
     h2 {
-        line-height: 28.93px !important;
+        line-height: 40.93px !important;
     }
 
     .join {
@@ -52,6 +74,10 @@
     .track_section {
         .row.expanded {
             flex-direction: column-reverse;
+        }
+
+        p {
+            width: 100%;
         }
     }
 }

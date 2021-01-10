@@ -1,3 +1,31 @@
+@font-face {
+  font-family: 'dm_serif_textregular';
+  src: url("/assets/fonts/dmseriftext/dmseriftext-regular-webfont.woff2") format("woff2"), url("/assets/fonts/dmseriftext/dmseriftext-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'montserratmedium';
+  src: url("/assets/fonts/montserrat/montserrat-medium-webfont.woff2") format("woff2"), url("/assets/fonts/montserrat/montserrat-medium-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'montserratregular';
+  src: url("/assets/fonts/montserrat/montserrat-regular-webfont.woff2") format("woff2"), url("/assets/fonts/montserrat/montserrat-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'montserratsemibold';
+  src: url("/assets/fonts/montserrat/montserrat-semibold-webfont.woff2") format("woff2"), url("/assets/fonts/montserrat/montserrat-semibold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -9,6 +37,7 @@ body {
   font-size: 13px;
   line-height: 20.81;
   font-weight: 400;
+  font-family: 'montserratregular' !important;
 }
 
 h2 {
@@ -23,11 +52,33 @@ h2 {
   width: 520px;
 }
 
+.hero_section .left_content p {
+  width: 86%;
+}
+
 .hero_section h1 {
   font-size: 45px;
-  line-height: 131.1%;
+  line-height: 134.13%;
   padding-bottom: 20px;
   padding-top: 20px;
+  width: 90%;
+  font-family: 'dm_serif_textregular' !important;
+}
+
+.hero_section_buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 160px;
+  padding-top: 10px;
+}
+
+.hero_section_buttons:first-child {
+  margin-right: 10px;
+}
+
+.hero_section_buttons .pad_right {
+  padding-right: 10px;
 }
 
 .hero_section form {
@@ -44,7 +95,7 @@ h2 {
   height: 60px;
   border-radius: 5px;
   margin-top: 44px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .hero_section input {
@@ -95,8 +146,12 @@ h2 {
   cursor: pointer;
 }
 
-.list_styles {
-  list-style-image: url("../../imgs/Vector.png");
+.hero_section .journal_features img {
+  padding-right: 16px;
+}
+
+.hero_section .journal_features .row:first-child {
+  padding-bottom: 25px;
 }
 
 .join_section {
@@ -116,6 +171,39 @@ h2 {
   line-height: 60.34px;
   padding-bottom: 20px;
   padding-top: 10px;
+  font-family: 'dm_serif_textregular' !important;
+}
+
+.track_section span {
+  font-weight: 600;
+}
+
+.track_section span img {
+  padding-right: 15px;
+}
+
+.track_section h2 {
+  padding-top: 20px;
+  font-family: 'dm_serif_textregular' !important;
+  font-size: 35px;
+  line-height: 134.1%;
+}
+
+.track_section ul {
+  margin-left: 0;
+  margin-bottom: 42.88px;
+}
+
+.track_section ul li {
+  background: url("../../imgs/Vector.png") no-repeat left center;
+  padding: 5px 0px 6px 30px;
+  list-style: none;
+  margin: 0;
+  vertical-align: middle;
+}
+
+.track_section p {
+  width: 80%;
 }
 
 footer .footer_intro {
@@ -124,6 +212,7 @@ footer .footer_intro {
   padding-top: 40px;
   padding-bottom: 50px;
   width: 70%;
+  font-family: 'dm_serif_textregular' !important;
 }
 
 footer .contact_info {
@@ -149,6 +238,12 @@ footer .contact_info ul {
   footer .contact_info {
     padding-left: 0;
   }
+  .hero_section .left_content {
+    width: 520px;
+  }
+  .hero_section .left_content p {
+    width: 100%;
+  }
   .hero_section h1 {
     font-size: 32px;
     line-height: 107.1%;
@@ -173,8 +268,17 @@ footer .contact_info ul {
   .hero_section form {
     width: 100%;
   }
+  .hero_section .journal_features .row:first-child {
+    padding-bottom: 0px;
+  }
+  .hero_section .journal_features .column {
+    padding-bottom: 10px;
+  }
+  .hero_section_buttons {
+    padding-bottom: 30px;
+  }
   h2 {
-    line-height: 28.93px !important;
+    line-height: 40.93px !important;
   }
   .join_info_text {
     font-size: 31px;
@@ -186,6 +290,9 @@ footer .contact_info ul {
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
+  }
+  .track_section p {
+    width: 100%;
   }
 }
 
