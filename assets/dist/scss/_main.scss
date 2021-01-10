@@ -1,6 +1,7 @@
 body {
     @include font-size;
     @include font-weight (normal);
+    font-family: 'montserratregular' !important;
 }
 
 
@@ -19,10 +20,11 @@ h2 {
         width: 520px;
         }
         h1 {
-            @include font-size ($fs: 45, $lh: 131.1%);
+            @include font-size ($fs: 45, $lh: 134.13%);
             padding-bottom: 20px;
             padding-top: 20px;
-            // width: 90%;
+            width: 90%;
+            font-family: 'dm_serif_textregular' !important;
         }
 
         &_buttons {
@@ -93,11 +95,6 @@ h2 {
 }
 
 
-
-// .list_styles {
-//     list-style-image: url('../../imgs/Vector.png');
-// }
-
 .join {
     &_section{
     background-color: $primary-blue;
@@ -115,6 +112,7 @@ h2 {
         @include font-size ($fs: 45, $lh: 60.34px);
         padding-bottom: 20px;
         padding-top: 10px;
+        font-family: 'dm_serif_textregular' !important;
     }
 }
 
@@ -129,6 +127,8 @@ h2 {
     }
      h2 {
          padding-top: 20px;
+         font-family: 'dm_serif_textregular' !important;
+         @include font-size ($fs: 35, $lh: 134.1%);
      }
 
      ul {
@@ -150,6 +150,7 @@ footer {
         padding-top: 40px;
         padding-bottom: 50px;
         width: 70%;
+        font-family: 'dm_serif_textregular' !important;
     }
 
     .contact_info {

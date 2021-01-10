@@ -1,6 +1,41 @@
 // @import url("https://fonts.googleapis.com/css?family=DM+Sans+Text:400,500,700&display=swap");
 // @import url("https://fonts.googleapis.com/css?family=Montserrat:100,200,300");
 
+@font-face {
+    font-family: 'dm_serif_textregular';
+    src: url('/assets/fonts/dmseriftext/dmseriftext-regular-webfont.woff2') format('woff2'),
+        url('/assets/fonts/dmseriftext/dmseriftext-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'montserratmedium';
+    src: url('/assets/fonts/montserrat/montserrat-medium-webfont.woff2') format('woff2'),
+        url('/assets/fonts/montserrat/montserrat-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'montserratregular';
+    src: url('/assets/fonts/montserrat/montserrat-regular-webfont.woff2') format('woff2'),
+        url('/assets/fonts/montserrat/montserrat-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'montserratsemibold';
+    src: url('/assets/fonts/montserrat/montserrat-semibold-webfont.woff2') format('woff2'),
+        url('/assets/fonts/montserrat/montserrat-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 * {
     box-sizing: border-box;
@@ -37,10 +72,6 @@ $font-color-gray: #828282;
 
     font-weight: $output;
 }
-
-// used by @include font-weight(normal)
-
-// Fonts
 
 // Defaults values
 
