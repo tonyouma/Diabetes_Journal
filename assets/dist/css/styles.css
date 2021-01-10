@@ -30,6 +30,71 @@ h2 {
   padding-top: 20px;
 }
 
+.hero_section form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border: 1px solid #C4C4C4;
+  padding: 5px;
+  width: 520px;
+  height: 60px;
+  border-radius: 5px;
+  margin-top: 44px;
+  margin-bottom: 30px;
+}
+
+.hero_section input {
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  border: none;
+}
+
+.hero_section input:focus {
+  outline: none !important;
+}
+
+.hero_section input::-webkit-input-placeholder {
+  color: #828282;
+  padding-left: 20px;
+}
+
+.hero_section input:-ms-input-placeholder {
+  color: #828282;
+  padding-left: 20px;
+}
+
+.hero_section input::-ms-input-placeholder {
+  color: #828282;
+  padding-left: 20px;
+}
+
+.hero_section input::placeholder {
+  color: #828282;
+  padding-left: 20px;
+}
+
+.hero_section input[type="text"] {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
+  margin-bottom: 0;
+  height: auto;
+}
+
+.hero_section button {
+  background: #437FD7;
+  color: #FFFFFF;
+  padding-left: 54px;
+  padding-right: 54px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
 .list_styles {
   list-style-image: url("../../imgs/Vector.png");
 }
@@ -75,17 +140,38 @@ footer .contact_info ul {
     padding: 30px;
   }
   footer .footer_intro {
-    font-size: 38px;
-    line-height: 45.34px;
+    font-size: 30px;
+    line-height: 35.34px;
     padding-top: 30px;
     padding-bottom: 20px;
     width: 100%;
+  }
+  footer .contact_info {
+    padding-left: 0;
   }
   .hero_section h1 {
     font-size: 32px;
     line-height: 107.1%;
     padding-bottom: 20px;
     padding-top: 20px;
+  }
+  .hero_section input[type="text"] {
+    width: 10%;
+  }
+  .hero_section input::-webkit-input-placeholder {
+    padding-left: 5px;
+  }
+  .hero_section input:-ms-input-placeholder {
+    padding-left: 5px;
+  }
+  .hero_section input::-ms-input-placeholder {
+    padding-left: 5px;
+  }
+  .hero_section input::placeholder {
+    padding-left: 5px;
+  }
+  .hero_section form {
+    width: 100%;
   }
   h2 {
     line-height: 28.93px !important;
@@ -94,6 +180,12 @@ footer .contact_info ul {
     font-size: 31px;
     line-height: 38.34px;
     padding-bottom: 10px;
+  }
+  .track_section .row.expanded {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
 }
 
