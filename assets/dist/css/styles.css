@@ -202,6 +202,10 @@ h2 {
   vertical-align: middle;
 }
 
+.track_section .orbit-container {
+  height: 100%;
+}
+
 .track_section .orbit-bullets {
   text-align: left;
   margin-top: 0;
@@ -233,9 +237,22 @@ footer .contact_info {
   padding-left: 25%;
 }
 
+footer .contact_info h6 {
+  font-weight: 600;
+}
+
 footer .contact_info ul {
   list-style-type: none;
   margin-left: 0;
+  padding-top: 20px;
+}
+
+footer .contact_info ul li {
+  padding-top: 6px;
+}
+
+footer .contact_info ul li a {
+  color: #2E282A;
 }
 
 @media screen and (max-width: 768px) {
@@ -251,6 +268,9 @@ footer .contact_info ul {
   }
   footer .contact_info {
     padding-left: 0;
+  }
+  footer ul {
+    padding-top: 0px;
   }
   .hero_section .left_content {
     width: 520px;
