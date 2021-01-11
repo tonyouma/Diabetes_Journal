@@ -1,7 +1,7 @@
 body {
     @include font-size;
     @include font-weight (normal);
-    font-family: 'montserratregular' !important;
+    font-family: 'montserratmedium' !important;
 }
 
 
@@ -110,6 +110,7 @@ h2 {
         background: $primary-white;
         padding: 17px 38px;
         color: $primary-blue;
+        font-family: 'montserratmedium';
     }
 
     &_info_text {
@@ -122,7 +123,7 @@ h2 {
 
 .track_section {
     span {
-        @include font-weight (medium-two);
+        font-family: 'montserratsemibold';
         img {
             padding-right: 15px;
         }
@@ -180,11 +181,17 @@ footer {
         font-family: 'dm_serif_textregular' !important;
     }
 
+    span{
+        img{
+            width: 13px;
+        }
+    }
+
     .contact_info {
         padding-left: 25%;
 
         h6{
-            @include font-weight(medium-two);
+        font-family: 'montserratsemibold';
         }
         ul {
         list-style-type: none;
