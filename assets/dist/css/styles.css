@@ -13,13 +13,6 @@
 }
 
 @font-face {
-  font-family: 'montserratregular';
-  src: url("/assets/fonts/montserrat/montserrat-regular-webfont.woff2") format("woff2"), url("/assets/fonts/montserrat/montserrat-regular-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
   font-family: 'montserratsemibold';
   src: url("/assets/fonts/montserrat/montserrat-semibold-webfont.woff2") format("woff2"), url("/assets/fonts/montserrat/montserrat-semibold-webfont.woff") format("woff");
   font-weight: normal;
@@ -37,7 +30,7 @@ body {
   font-size: 13px;
   line-height: 20.81;
   font-weight: 400;
-  font-family: 'montserratregular' !important;
+  font-family: 'montserratmedium' !important;
 }
 
 h2 {
@@ -164,6 +157,7 @@ h2 {
   background: #FFFFFF;
   padding: 17px 38px;
   color: #437FD7;
+  font-family: 'montserratmedium';
 }
 
 .join_info_text {
@@ -175,7 +169,7 @@ h2 {
 }
 
 .track_section span {
-  font-weight: 600;
+  font-family: 'montserratsemibold';
 }
 
 .track_section span img {
@@ -233,12 +227,16 @@ footer .footer_intro {
   font-family: 'dm_serif_textregular' !important;
 }
 
+footer span img {
+  width: 13px;
+}
+
 footer .contact_info {
   padding-left: 25%;
 }
 
 footer .contact_info h6 {
-  font-weight: 600;
+  font-family: 'montserratsemibold';
 }
 
 footer .contact_info ul {
@@ -288,16 +286,16 @@ footer .contact_info ul li a {
     width: 10%;
   }
   .hero_section input::-webkit-input-placeholder {
-    padding-left: 5px;
+    padding-left: 0px;
   }
   .hero_section input:-ms-input-placeholder {
-    padding-left: 5px;
+    padding-left: 0px;
   }
   .hero_section input::-ms-input-placeholder {
-    padding-left: 5px;
+    padding-left: 0px;
   }
   .hero_section input::placeholder {
-    padding-left: 5px;
+    padding-left: 0px;
   }
   .hero_section form {
     width: 100%;
